@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
-  background: #111;  /* μαύρο φόντο */
-  color: #FFD700;    /* χρυσό κείμενο */
+  background: #111;       /* μαύρο φόντο */
+  color: #DAA520;          /* απαλό χρυσό */
   line-height: 1.6;
 }
 
@@ -79,20 +79,20 @@ h2 {
   display: inline-block;
   margin: 10px;
   padding: 12px 20px;
-  border: 1px solid #FFD700;
-  color: #FFD700;
+  border: 1px solid #DAA520;
+  color: #DAA520;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .social a:hover {
-  background: #FFD700;
+  background: #DAA520;
   color: #111;
 }
 
 footer {
   background: #000;
-  color: #FFD700;
+  color: #DAA520;
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
