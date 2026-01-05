@@ -1,23 +1,30 @@
+/* Γενικά */
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
-  background: #f7f7f7;
-  color: #222;
+  background: #111; /* μαύρο φόντο */
+  color: #FFD700;  /* χρυσό κείμενο */
   line-height: 1.6;
 }
 
+/* Header */
 header {
-  background: #111;
-  color: white;
   text-align: center;
   padding: 80px 20px;
+  background: #000;
 }
 
 header h1 {
+  font-size: 3rem;
   letter-spacing: 4px;
-  font-size: 2.8rem;
 }
 
+header p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* Ενότητες */
 section {
   max-width: 900px;
   margin: auto;
@@ -30,6 +37,7 @@ h2 {
   letter-spacing: 2px;
 }
 
+/* Gallery */
 .gallery .photos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -39,31 +47,58 @@ h2 {
 .gallery img {
   width: 100%;
   border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Lightbox */
+#lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 6px;
+}
+
+/* Contact */
 .contact {
-  background: #eee;
   text-align: center;
+  background: #222;
+  padding: 60px 20px;
 }
 
 .social a {
   display: inline-block;
   margin: 10px;
   padding: 12px 20px;
-  border: 1px solid #111;
-  color: #111;
+  border: 1px solid #FFD700;
+  color: #FFD700;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .social a:hover {
-  background: #111;
-  color: white;
+  background: #FFD700;
+  color: #111;
 }
 
+/* Footer */
 footer {
-  background: #111;
-  color: white;
+  background: #000;
+  color: #FFD700;
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
